@@ -14,7 +14,7 @@ const c = 30; // ES6
 // const không thể thay đổi giá trị, không thể define lại
 var varSample = 1;
 var varSample = 2;
-console.log(varSample); // 2
+console.log(varSample);
 
 let letSample = 1;
 letSample = 2;
