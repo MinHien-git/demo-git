@@ -1,0 +1,16 @@
+$base-color: 1rem;
+.container {
+  background: red;
+  display: flex;
+  gap: 1rem;
+  .box {
+    background: blue;
+  }
+  & > *:nth-child(2) {
+    color: green;
+    background: $base-color;
+  }
+  &:hover {
+    background: #c6538c;
+  }
+}

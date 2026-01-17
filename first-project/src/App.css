@@ -1,0 +1,139 @@
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.gap-1 {
+  gap: var(--gap-1);
+}
+.gap-2 {
+  gap: var(--gap-2);
+}
+.gap-3 {
+  gap: var(--gap-3);
+}
+.gap-4 {
+  gap: var(--gap-4);
+}
+.padding-1 {
+  padding: var(--p-1);
+}
+.padding-2 {
+  padding: var(--p-2);
+}
+.padding-3 {
+  padding: var(--p-3);
+}
+.padding-4 {
+  padding: var(--p-4);
+}
+.padding-1-top {
+  padding-top: var(--p-1);
+}
+.padding-2-top {
+  padding-top: var(--p-2);
+}
+.padding-3-top {
+  padding-top: var(--p-3);
+}
+.padding-1-bottom {
+  padding-bottom: var(--p-1);
+}
+.padding-2-bottom {
+  padding-bottom: var(--p-2);
+}
+.padding-3-bottom {
+  padding-bottom: var(--p-3);
+}
+.margin-1 {
+  margin: var(--m-1);
+}
+.margin-2 {
+  margin: var(--m-2);
+}
+.margin-3 {
+  margin: var(--m-3);
+}
+.margin-4 {
+  margin: var(--m-4);
+}
+.margin-1-top {
+  margin-top: var(--m-1);
+}
+.margin-2-top {
+  margin-top: var(--m-2);
+}
+.margin-3-top {
+  margin-top: var(--m-3);
+}
+.margin-4-top {
+  margin-top: var(--m-4);
+}
+.font-size-500 {
+  font-size: var(--fs-500, 1.5rem);
+}
+.font-700 {
+  font-weight: var(--fw-700, 700);
+}
+
+.font-400 {
+  font-weight: var(--fw-400, 700);
+}
+
+.color-green-400 {
+  color: hsl(var(--green-400));
+}
+.color-grey-900 {
+  color: hsl(var(--grey-900));
+}
+.color-grey-500 {
+  color: hsl(var(--grey-500));
+}
+.color-grey-400 {
+  color: hsl(var(--grey-400));
+}
+.color-grey-200 {
+  color: hsl(var(--grey-200));
+}
+.color-grey-50 {
+  color: hsl(var(--grey-50));
+}
+.color-white {
+  color: hsl(var(--white));
+}
+.bg-green-400 {
+  background-color: hsl(var(--green-400));
+}
+.bg-grey-900 {
+  background-color: hsl(var(--grey-900));
+}
+.bg-grey-500 {
+  background-color: hsl(var(--grey-500));
+}
+.bg-grey-400 {
+  background-color: hsl(var(--grey-400));
+}
+.bg-grey-200 {
+  background-color: hsl(var(--grey-200));
+}
+.bg-grey-50 {
+  background-color: hsl(var(--grey-50));
+}
+
+.bg-white {
+  background-color: hsl(var(--white));
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}

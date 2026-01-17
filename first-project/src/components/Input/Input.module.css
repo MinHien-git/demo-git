@@ -1,0 +1,17 @@
+.inputContainer input,
+.inputContainer input:hover,
+.inputContainer input:focus,
+.inputContainer input:active {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+.inputContainer {
+  background-color: hsl(var(--grey-400), 0.1);
+}
+.icon {
+  color: hsl(var(--green-900), 0.5);
+  margin-inline: var(--m-2);
+}

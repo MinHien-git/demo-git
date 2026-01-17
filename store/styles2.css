@@ -1,0 +1,357 @@
+:root {
+  --red-color: hsl(14, 86%, 42%);
+  --green-color: hsl(159, 69%, 38%);
+  --rose900-color: 14, 65%, 9%;
+  --rose500-color: hsl(12, 20%, 44%);
+  --rose400-color: hsl(7, 20%, 60%);
+  --rose300-color: hsl(14, 25%, 72%);
+  --rose100-color: hsl(13, 31%, 94%);
+  --rose50-color: hsl(20, 50%, 98%);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+/*BODY*/
+body,
+* {
+  padding: auto;
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*COLOR CLASSES*/
+.red-color {
+  color: var(--red-color);
+}
+.green-color {
+  color: var(--green-color);
+}
+.rose900-color {
+  color: hsl(var(--rose900-color));
+}
+.rose500-color {
+  color: var(--rose500-color);
+}
+.rose400-color {
+  color: var(--rose400-color);
+}
+.rose300-color {
+  color: var(--rose300-color);
+}
+.rose100-color {
+  color: var(--rose100-color);
+}
+.rose50-color {
+  color: var(--rose50-color);
+}
+
+/*FONT CLASSES*/
+.fw-bold {
+  font-weight: bold;
+}
+
+.cate-font {
+  font-size: 12px;
+}
+
+/*REUSE CLASSES*/
+.center-item {
+  margin-inline: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin_3 {
+  margin-top: 3px;
+}
+
+.margin_6 {
+  margin-top: 6px;
+}
+
+.margin_t12 {
+  margin-top: 12px;
+}
+
+.margin_l12 {
+  margin-left: 12px;
+}
+
+.button-placement {
+  margin-top: -12px;
+}
+
+.button-image-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.button-image-container .button {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border_radius_10px {
+  border-radius: 10px;
+}
+
+.border-none {
+  border: none;
+}
+
+.button-border {
+  border-color: var(--rose300-color);
+}
+
+/*SECTION*/
+/*SECTION 1: CONTAINER*/
+.container {
+  width: 88%;
+  display: flex;
+  background-color: var(--rose100-color);
+  margin: auto;
+  margin-top: 40px;
+  max-width: 80rem;
+}
+
+/*SECTION 2: ITEMS*/
+.items {
+  width: 75%;
+  margin: 30px 30px;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/*SECTION 3: CART*/
+.cart {
+  width: 25%;
+  height: 500px;
+  background-color: var(--rose50-color);
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 12px;
+  position: relative;
+}
+
+.deco_cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rose100-color);
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px auto;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*SECTION 4: CARD*/
+.card {
+  background-color: var(--rose50-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.card.active img {
+  border: 1px solid var(--red-color);
+}
+
+.order_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*SECTION 5: CARD BUTTON*/
+.add-item {
+  background-color: var(--rose50-color);
+  align-items: center;
+  border-radius: 50px;
+}
+
+.active .add-item {
+  display: none;
+}
+
+.active .add-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: min(8px, 1rem);
+}
+.add-amount > strong {
+  color: var(--rose50-color);
+}
+.add-amount > button {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  color: var(--rose50-color);
+  background-color: transparent;
+  border: 1px solid var(--rose50-color);
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-button {
+  width: 75%;
+  height: 32px;
+  background-color: var(--rose50-color);
+  align-items: center;
+  border-radius: 50px;
+}
+
+.add-amount {
+  background-color: var(--red-color);
+  border-radius: 50px;
+  display: none;
+}
+
+/*SECTION 6: IMAGE*/
+.card-img {
+  display: block;
+  width: 100%;
+}
+
+.icon-img {
+  display: block;
+  width: 8%;
+  background-color: none;
+}
+
+.food-img {
+  display: block;
+  width: 11%;
+  background-color: none;
+}
+
+/*SECTION 7: CART BUTTON*/
+.cart-button {
+  width: 90%;
+  height: 40px;
+  background-color: var(--red-color);
+  align-items: center;
+  border-radius: 50px;
+  color: var(--rose50-color);
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*SECTION 8: CART ITEM*/
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.cart-details {
+  font-size: 13px;
+  color: #666;
+}
+
+.cart-details span {
+  margin-right: 5px;
+}
+
+.amount {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.base-price {
+  color: var(--rose300-color);
+}
+
+.total-price {
+  color: var(--rose500-color);
+  font-weight: bold;
+}
+
+.remove-btn {
+  font-size: 16px;
+  color: var(--red-color);
+  border-radius: 50%;
+  border-color: var(--red-color);
+}
+
+/*SECTION 9: CONFIRM ORDER*/
+.confirm-order {
+  background-color: hsla(179, 100%, 0%, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-order-main {
+  background-color: var(--rose50-color);
+  width: 30%;
+  aspect-ratio: 1/1;
+  opacity: unset;
+}
+
+.confirm-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  gap: 12px;
+}
+
+.button-align {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}

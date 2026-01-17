@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .game-card {
+        display: block;
+        width: 200px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+      }
+      .game-card img {
+        width: 100%;
+      }
+      #game-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple heading 1</h1>
+    <p>This is a sample paragraph to demonstrate the DOM structure.</p>
+    <small>This is a small paragraph</small>
+    <p class="longparagraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum
+      dolorem similique, optio delectus vitae fuga itaque hic quos iusto
+      voluptates fugiat nesciunt quae. Eum natus ea quod tempore velit
+      necessitatibus, facere iusto nisi, quae maxime praesentium provident
+      impedit in?
+    </p>
+    <p>
+      Another paragraph to show multiple elements in the DOM tree structure.
+    </p>
+    <div class="longparagraph">Divider Lorem ipsum dolor sit amet.</div>
+    <div id="first">
+      <h3>Fist element</h3>
+      <ul>
+        <li class="fist-li">List item 1</li>
+        <li class="second-li">List item 2</li>
+        <li class="third-li">List item 3</li>
+        <li class="forth-li">List item 4</li>
+      </ul>
+      <small>This is a small element</small>
+    </div>
+    <a id="clickbutton">Click me</a>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, error
+      facilis neque incidunt accusamus laborum commodi, accusantium ad eaque
+      expedita architecto tempora fuga quaerat eligendi numquam doloribus velit.
+      Quos animi reprehenderit corrupti voluptas repellendus asperiores, aliquam
+      ratione beatae adipisci, quia non quibusdam esse sunt quidem incidunt
+      soluta nulla temporibus est?
+    </div>
+    <article>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, architecto.
+      Tempora reiciendis vitae dignissimos dolorum quae maiores nesciunt ipsum
+      voluptatem optio unde perspiciatis ducimus corrupti, tempore quia eligendi
+      possimus reprehenderit, nam impedit, illo facere! Accusantium, assumenda
+      consequuntur odit sapiente quaerat alias dolorem minus. Aliquid, veniam
+      possimus minima animi cumque cupiditate?
+    </article>
+    <input type="text" id="input-text" placeholder="Enter your name" />
+    <button id="popup" onclick="clickEvent()">Popup button</button>
+    <button id="popup-2">Popup button 2</button>
+    <div
+      style="
+        width: 100vw;
+        height: 100vh;
+        background-color: lightgray;
+        position: absolute;
+        inset: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      "
+      id="popup-div"
+    >
+      <div>
+        <p id="text-output">sample</p>
+        <button
+          onclick="closePopup()"
+          style="position: absolute; top: 10px; right: 10px"
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <div id="game-container"></div>
+    <script src="./dom.js"></script>
+    <script src="./fetchDemo.js"></script>
+  </body>
+</html>

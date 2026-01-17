@@ -1,0 +1,51 @@
+body,
+html,
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --green-400: 172, 67%, 45%;
+  --green-900: 183, 100%, 15%;
+  --grey-500: 186, 14%, 43%;
+  --grey-400: 184, 14%, 56%;
+  --grey-200: 185, 41%, 84%;
+  --grey-50: 189, 47%, 97%;
+  --white: 0, 100%, 100%;
+
+  /* fontsize */
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
+  /* font weight */
+  --fw-700: 700;
+
+  /* gap weight */
+  --gap-1: 0.25rem;
+  --gap-2: 0.5rem;
+  --gap-3: 1rem;
+  --gap-4: 1.5rem;
+
+  /* padding */
+  --p-1: 0.25rem;
+  --p-2: 0.5rem;
+  --p-3: 1rem;
+  --p-4: 1.5rem;
+
+  /* margin */
+  --m-1: 0.25rem;
+  --m-2: 0.5rem;
+  --m-3: 1rem;
+  --m-4: 1.5rem;
+}
+
+body,
+html {
+  background-color: hsl(var(--grey-200), 0.4);
+  min-height: 100vh;
+}

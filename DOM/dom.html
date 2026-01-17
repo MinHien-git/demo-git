@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Practise</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Dom Practise</h1>
+    <div class="container">
+      <button class="btn" id="myButton">Click Me</button>
+      <p id="myParagraph">This is a paragraph.</p>
+    </div>
+    <button class="btn" id="getOutBtn">Get out</button>
+
+    <!-- Hiển thị danh sách sản phẩm -->
+    <ul>
+      <li class="item">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li>
+      <li class="item">Item 4</li>
+    </ul>
+    <!-- Hiển thị danh sách sản phẩm yeeu  thich  -->
+    <ul class="favorite-list">
+      <li class="item">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li>
+      <li class="item">Item 4</li>
+    </ul>
+    <input
+      type="text"
+      id="myInput"
+      placeholder="Type something..."
+      value="Haha"
+    /><button id="changeTextButton">Change Paragraph Text</button>
+    <p id="message">Đã có lỗi yêu cầu người kiểm tra lại kết quả</p>
+
+    <div>
+      <button id="addItem">Add Item</button>
+      <div id="item-container"></div>
+    </div>
+    <button id="addToList">Add To List</button>
+    <!-- hiển thị danh sách khách hàng -->
+    <ul class="card-item-container">
+      <li class="card-item">card 1</li>
+      <li class="card-item">Card 2</li>
+      <li class="card-item">Card 3</li>
+      <li class="card-item">Card 4</li>
+    </ul>
+    <textarea id="myTextarea" rows="4" cols="50" title="my text">
+Hello, this is a sample text area.
+    </textarea>
+    <p id="review"></p>
+    <button id="showReview">Show Review</button>
+    <div id="list-customer" style="padding-bottom: 100px"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

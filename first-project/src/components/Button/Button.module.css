@@ -1,0 +1,13 @@
+.btn {
+  padding: var(--p-2) var(--p-4);
+  border: none;
+  text-transform: uppercase;
+}
+.primaryBtn {
+  background-color: hsl(var(--green-400));
+  color: hsl(var(--white));
+}
+.secondaryBtn {
+  background-color: hsl(var(--grey-500));
+  color: hsl(var(--white));
+}
